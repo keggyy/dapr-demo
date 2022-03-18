@@ -1,0 +1,27 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: pubsub
+spec:
+  type: pubsub.rabbitmq
+  version: v1
+  initTimeout: 5m
+  metadata:
+    - name: host
+      value: "amqp://rabbitmq:5672"
+    - name: durable
+      value: "true"
+    - name: deletedWhenUnused
+      value: "false"
+    - name: autoAck
+      value: "false"
+    - name: reconnectWait
+      value: "0"
+    - name: concurrency
+      value: parallel
+    - name: ttlInSeconds
+      value: "600"
+scopes:
+  - php-fpm
+  - php-fpm-debug
+  - productsub

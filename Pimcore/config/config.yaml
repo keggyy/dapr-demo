@@ -141,6 +141,9 @@ pimcore:
 
 #### SYMFONY OVERRIDES
 framework:
+    http_client:
+        default_options:
+            max_redirects: 7
 
 #### USE CUSTOM CACHE POOL
 #    cache:

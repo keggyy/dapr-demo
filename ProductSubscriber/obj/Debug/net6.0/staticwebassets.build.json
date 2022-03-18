@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "s306Kup0IdYLWtJiIQQZwG5D+a66KuDax3Dg6QbRLmE=",
+  "Source": "IntegrationMiddleware",
+  "BasePath": "_content/IntegrationMiddleware",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
